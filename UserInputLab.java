@@ -11,11 +11,12 @@ public class UserInputLab{
     
     String name = " ";
     String planet = " ";
+    String color = " ";
     int age = 0;
     Scanner input = new Scanner(System.in); //user input will be stored in var input
     
     //lets users name character
-    System.out.println("What is your name?");
+    System.out.println("Hey there! Welcome to Olympus Mons Research base. What is your name?");
     name = input.next();
     
     System.out.println("So it's " + name + "? That's nice. What planet were you born on?");
@@ -25,7 +26,13 @@ public class UserInputLab{
                        + "\nHow old are you in " + planet + " years, " + name + "?");
     age = input.nextInt();
     
-    System.out.println( age + "? That's about " + (age * 7) + " cycles here on mars.");
+    System.out.println( age + "? That's about " + (age * 7) + " cycles here on Mars.\n"
+                      + "What's your favorite color?");
+    color = input.next();
+    System.out.println("Lucky you, I've got a " + color + " labsuit here for you!");
+    
+    
+    
     
     
   
