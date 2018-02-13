@@ -22,10 +22,10 @@ public class UserInputLab{
     planet = input.next();
     
     System.out.println("Oh, you're from " + planet + "? I've got a cousin who lives there!"
-                       + "\n How old are you in " + planet + " years, " + name + "?");
-    age = input.next();
+                       + "\nHow old are you in " + planet + " years, " + name + "?");
+    age = input.nextInt();
     
-    System.out.println("")
+    System.out.println( age + "? That's about " + (age * 7) + " cycles here on mars.");
     
     
   
