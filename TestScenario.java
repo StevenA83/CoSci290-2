@@ -20,14 +20,21 @@ public class TestScenario{
     int min = 1;
     int max = 100;
     int weaponBattery = 0;
-    int randomNum = minimum +(int)(Math.random() * maximum);
+    int randomNum = min +(int)(Math.random() * max);
     
     //use RNG + if/else if/else to give ammunition
-    if(randomNumber >90){
+    if(randomNum >90){
       weaponBattery = 100;
       System.out.println("Your PLASMA GUN is at " + weaponBattery + "% charge!");
     }
     
+    else if(randomNum >= 25 && randomNum <=90){
+      weaponBattery = randomNum;
+      System.out.println("Your PLASMA GUN is at " + weaponBattery + "% charge. Find some POWER to fill it up!");
+    }
+    else{
+      System.out.println("Your PLASMA GUN is out of charge. Its useless until you put some POWER in it!");
+    }
   }
   
 }
