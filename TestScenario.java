@@ -35,6 +35,17 @@ public class TestScenario{
     else{
       System.out.println("Your PLASMA GUN is out of charge. Its useless until you put some POWER in it!");
     }
+    //critical hit
+    
+    randomNum = min +(int)(Math.random() * max);
+    
+    if(randomNum >90){
+      System.out.println("You killed the enemy in one hit!");
+    }
+    else{
+      System.out.println("You did 5 DMG to the enemy!");
+    }
+    
   }
   
 }
