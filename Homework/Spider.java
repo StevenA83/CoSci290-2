@@ -1,5 +1,5 @@
 // Author: Weishu Tan (cosci 290 group 4)
-// Manager: ___________ (Could you please write your name here?)
+// Manager: Christian Castillo
 
 public class Spider {
   
@@ -43,9 +43,5 @@ public class Spider {
       "\t health " + this.health +
       "\t attack " + this.attack + 
       "\t defense " + this.defense;
-  }
-  
-  public hurtAlien (Alien a) {
-    // todo
   }
 }
