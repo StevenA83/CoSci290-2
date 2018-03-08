@@ -1,3 +1,6 @@
+// Author: Weishu Tan (cosci 290 group 4)
+// Manager: ___________ (Could you please write your name here?)
+
 public class Spider {
   private health;
   private attack;
