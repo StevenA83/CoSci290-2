@@ -1,18 +1,39 @@
 Spider
+  health 15
+  attack 5
+  defense 5
 
 Alien
+  health 25
+  attack 8
+  defense 
 
 ParasiticWorker
+  health
+  attack
+  defense
 
 Drone
+  health
+  attack
+  defense
 
-Weapon
+RayGun
+  attack 8 
+  battery 100
+  
+MultiTool
+  attack 8
 
-HealthKit
 
-BatteryPack
+Health
+  Health 100
+
+BatteryCells
+  count
 
 HealthPack
+  count
 
 Shield
 
