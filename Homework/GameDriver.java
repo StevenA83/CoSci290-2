@@ -21,14 +21,7 @@ public class GameDriver{
     Scanner input = new Scanner(System.in);
 
     //Splash Screen
-    System.out.print("\n"
-                    + "                                                 :::::::::: ::::::::   ::::::::      :::     :::::::::  ::::::::::\n" 
-                    + "                                                :+:       :+:    :+: :+:    :+:   :+: :+:   :+:    :+: :+:\n"
-                    + "                                               +:+       +:+        +:+         +:+   +:+  +:+    +:+ +:+\n"
-                    + "                                              +#++:++#  +#++:++#++ +#+        +#++:++#++: +#++:++#+  +#++:++#\n"
-                    + "                                             +#+              +#+ +#+        +#+     +#+ +#+        +#+\n"
-                    + "                                            #+#       #+#    #+# #+#    #+# #+#     #+# #+#        #+#\n"
-                    + "                                           ########## ########   ########  ###     ### ###        ##########\n");
+    printTitle();
     
     //Start Story
     System.out.print(" \n \n \n \n"); // adds lines to seperate introduction from title
@@ -60,6 +53,7 @@ public class GameDriver{
     System.out.println("\"Lucky you, I've got a " + color + " labsuit here for you!\"");
     
     //RNG Event
+    /*
     System.out.println("How many plasma rounds do you want to shoot at the Wall Crawler?");
     RngSlot = input.nextInt();
     if(RNG > 18){
@@ -75,8 +69,36 @@ public class GameDriver{
       }
     }
   // end of RNG event
+  */
+    
+  //fight spider
+    int playerHealth = 100;
+    Spider[] spider = new Spider[2];
+    Spider spider1 = new Spider();
+    spider[0] = spider1;
+    System.out.print("Spider health: " + spider[0].getHealth());
+    
+    //get spider health from class
+    
     
     //Game over Screen
+    printGameOver();
+  }
+  //end main
+  
+  //prints name of the game
+  public static void printTitle(){
+     System.out.print("\n"
+                    + "                                                 :::::::::: ::::::::   ::::::::      :::     :::::::::  ::::::::::\n" 
+                    + "                                                :+:       :+:    :+: :+:    :+:   :+: :+:   :+:    :+: :+:\n"
+                    + "                                               +:+       +:+        +:+         +:+   +:+  +:+    +:+ +:+\n"
+                    + "                                              +#++:++#  +#++:++#++ +#+        +#++:++#++: +#++:++#+  +#++:++#\n"
+                    + "                                             +#+              +#+ +#+        +#+     +#+ +#+        +#+\n"
+                    + "                                            #+#       #+#    #+# #+#    #+# #+#     #+# #+#        #+#\n"
+                    + "                                           ########## ########   ########  ###     ### ###        ##########\n");
+  }
+  
+  public static void printGameOver(){
     System.out.print("\n \n \n \n \n" //adds a few lines to seperate the game over screen
               + "      ::::::::      :::       :::   :::   :::::::::: \n"
               + "    :+:    :+:   :+: :+:    :+:+: :+:+:  :+:         \n"
@@ -95,4 +117,6 @@ public class GameDriver{
               + "\n \n \nThanks for playing!"
               + "\n \n");
   }
+  
+  
 }

@@ -1,3 +1,5 @@
+list of things in our text adventure.
+
 Spider
   health 15
   attack 5

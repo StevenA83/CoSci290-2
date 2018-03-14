@@ -8,8 +8,8 @@ public class Spider {
   private int defense;
   
   public Spider () {
-    this.health = 15;
-    this.attack = 5;
+    this.health = 12 + (int)(Math.random() * (25 - 12));
+    this.attack = 5 + (int)(Math.random() * (10 - 5));;
     this.defense = 5;
   }
   
