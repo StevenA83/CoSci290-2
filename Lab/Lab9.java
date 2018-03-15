@@ -22,13 +22,14 @@ public class Lab9{
     //uppercase name refers to object, lowercase is local variable
     ArrayList<Student> students = new ArrayList<Student>();
     
+    //creating indexes to be able to store grades and mojors to list
     Student s1 = new Student();
     Student s2 = new Student();
     Student s3 = new Student();
     Student s4 = new Student();
     Student s5 = new Student();
     
-    //instantiate each Student object
+    //Adding indexes to ArrayList
     students.add(s1);
     students.add(s2);
     students.add(s3);
@@ -37,33 +38,23 @@ public class Lab9{
     
     
     //assigning values
-    
     s1.setGpa(2.3);
     s1.setMajor("Electrical Engineering");
     
     //second student entry
-    
     s2.setGpa(3.5);
     s2.setMajor("Psychology");
-    
-    
-    //third student entry
     
     s3.setGpa(3.8);
     s3.setMajor("Math");
     
-    //fourth entry
-    
     s4.setGpa(4.0);
     s4.setMajor("Kinesiology");
-    
-    //fifth entry
     
     s5.setGpa(3.0);
     s5.setMajor("Art");
     
     //calls for PrintStudent
-    
     printStudent(students);
     
   }//end main
