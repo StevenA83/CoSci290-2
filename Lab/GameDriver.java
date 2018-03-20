@@ -1,17 +1,14 @@
 //Christian Castillo
 //Co Sci 290
-//15 Feb 2018
+//20 March
+//Ver 0.3
 //HW 1
 
-import java.util.Scanner; //import Scanner - allows reading of input
+import java.util.*; //to use ArrayList and Scanner
 public class GameDriver{
   public static void main(String [] args){
     
     //variables with blank placeholders
-    String name = " ";
-    String planet = " ";
-    String color = " ";
-    int age = 0;
     int RngSlot = 10; //used for player influenced RNG
     int PIRng = 1 + (int)(Math.random() * (RngSlot - 1)); //PLayer Influenced RNG
     int RNG = 1 + (int)(Math.random() * (25 - 1)); //RNG, outputs 1 - 25

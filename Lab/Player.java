@@ -1,29 +1,30 @@
-// Author: Weishu Tan (cosci 290 group 4)
-// Manager: Christian Castillo
-
-public class Spider {
+public class Player{
   
-  private int health;
-  private int attack;
-  private int defense;
+  private String name;
+  private String planet;
+  private String color;
+  private int age;
   
-  public Spider () {
-    this.health = 15;
-    this.attack = 5;
-    this.defense = 5;
+  public Spider(){
+    this.name = "";
+    this.planet = "";
+    this.color = "";
+    this.age = 0;
   }
   
-  public int getHealth () {
-    return this.health;
+  public String getName(){
+    return this.name;
   }
   
-  public int getAttack () {
-    return this.attack;
+  public String getPlanet(){
+    return this.planet;
   }
   
-  public int getDefense () {
-    return this.defense;
+  public String getColor () {
+    return this.color;
   }
+  
+  public int age
   
   public void setHealth (int h) {
     this.health = h;
