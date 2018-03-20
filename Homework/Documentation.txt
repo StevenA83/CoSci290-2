@@ -1,3 +1,17 @@
+Plot: You are a new employee of the 
+Interplanetary Corporation – a conglomerate 
+that has a monopoly on Mars. You are there
+for a job in the mining sector as the company 
+has found uses for the iron deposits on Mars. 
+On your first day a tunneler’s sensors fail 
+and proceeds to dig to the center of the planet, 
+causes a massive earthquake and the local wildlife, 
+now contaminated with mining chemicals, goes berserk 
+and break into the Corporation complex. You now must 
+find an escape pod, but as you reach the first couple 
+of pods in the game, you find out that some of them 
+do not function due to the Corporation cutting corners.
+
 list of things in our text adventure.
 
 Spider
