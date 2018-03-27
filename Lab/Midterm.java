@@ -26,20 +26,13 @@ public class Midterm{
         String numberAsString = stringArray[i];
         intArray[i] = Integer.parseInt(numberAsString);
      }
-    
-    
-     System.out.println("Number of integers: " + intArray.length);
-     System.out.println("The integers are:");
-     for (int number : intArray) {
-        System.out.println(number);
-     }
-    
+   
     //code from http://javadevnotes.com/java-split-string-into-array-of-integers-example
    
     
     
     //shoud put result into a plain english statement
-    statement(isSorted(intArray));
+    statement(isSorted(intArray), intArray);
     
   }
   
@@ -56,13 +49,22 @@ public class Midterm{
     return sorted;
   }
 
-  public static void statement(boolean sortedOrNot){
+  public static void statement(boolean sortedOrNot, int[] nums){
     if(sortedOrNot == true){
       System.out.println("This list is sorted!");
     }
 
     else{
-      System.out.println("This list is NOT sorted");
+      System.out.println("This list is NOT sorted \n \n" + 
+                        "The sorted list is:");
+      //prints out members of array
+      int[] entriesInOrder = sortArray(nums);
+      for(int k = 1; k < entriesInOrder.length; k++){
+        System.out.print(entriesInOrder[k] + "\t");
+      }
+      System.out.print("\n");
+    
+     
     }
 
   }
